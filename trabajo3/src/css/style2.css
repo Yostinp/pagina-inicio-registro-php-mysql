@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --color-fondo : #b93c28;
+    --color-borde : coral;
+    --color-fondo-card : rgb(251, 251, 251);
+    --color-text-card : #212121;
+}
+body{
+    background-image: linear-gradient(120deg,#cf57448f,#ae3f2e9c,#c66455),url(../../img/fondo.jpg);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor{
+    background-color: var(--color-fondo-card);
+    color: var(--color-text-card);
+    box-shadow: 2px 7px 20px var(--color-borde);
+    width: 400px;
+    height: 500px;
+    border-radius: 15px;
+}
+.contenedor h2{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
+/*estilos de formulario*/
+.label-form{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+.label-form img{
+    width: 35px;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+    background: #e0e0e0;
+box-shadow: inset 5px 5px 10px #c7c7c7,
+            inset -5px -5px 10px #f9f9f9;
+}
+.label-form input{
+    width: 200px;
+    height: 35px;
+    border: unset;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+    background: #e0e0e0;
+box-shadow: inset 9px 9px 18px #c7c7c7,
+            inset -9px -9px 18px #f9f9f9;
+}
+.label-form input:focus{
+    outline: none;
+    font-size: 18px;
+    padding-left: 10px;
+}
+::placeholder {padding-left: 10px;}
+.buton-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* estilos de los botones enviar y regresar*/
+.buton-form a{
+    padding: 10px 18px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--color-fondo-card);
+    font-weight: bold;
+    background-color: #1a73e8;
+    text-decoration: none;
+    transition: all 251ms ease-out;
+}
+
+.buton-form a:hover {
+    background-color: #212121;
+    color: #e8e8e8;
+}
+button {
+    padding: 9px 26px;
+    margin-right: 50px;
+    border-radius: 5px;
+    border: unset;
+    color: #fff9f9;
+    z-index: 1;
+    background: #1a73e8;
+    position: relative;
+    font-size: 17px;
+    font-weight: bold;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 0px 7px 23px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+}
+button:hover{
+    background-color: #212121;
+    color: #e0e0e0;
+}
+
+/* estilos de errores del php inicio sesion y registro*/
+
+.error{
+    background-color: rgb(231, 102, 128);
+    width: 100%;
+    height: 30px;
+    margin-top: -20px;
+    margin-bottom: 11px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.correcto{
+    background-color: lawngreen;
+    width: 100%;
+    height: 30px;
+    margin-top: -20px;
+    margin-bottom: 11px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}

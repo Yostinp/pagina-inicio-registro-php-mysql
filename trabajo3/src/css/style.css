@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-image: url(../../img/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 400px;
+    height: 500px;
+    border-radius: 16px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  0px 1px 20px coral,
+                -0px -1px 20px coral;
+    overflow: hidden;
+    position: relative;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    background-image:linear-gradient(rgba(251, 70, 4, 0.266),rgba(8, 255, 8, 0.306),rgba(255, 68, 0, 0.403)), url(../../img/fondo-card.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 30%;
+}
+.login{
+    margin-top: 20%;
+    position: absolute;
+}
+.login img{
+    border: 4px solid rgb(220, 217, 217);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.form{
+    margin-top: 80px;
+}
+.label-form{
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.label-form img{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+.label-form input{
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    background: #e0e0e0;
+    box-shadow: inset 6px 6px 12px #c3c3c3,
+            inset -6px -6px 12px #fdfdfd;
+}
+.label-form input:focus{ 
+    padding-left: 10px;
+    font-size: 16px;
+    outline: none;
+}
+input:frist-child {
+    margin-top: 0%;
+}
+.form input[type = 'submit']{
+    background-color: transparent;
+    border: none;
+    background-color: coral;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    transition: all 1s ;
+}
+.form input[type = 'submit']:hover{
+    transform: translateY(-10px);
+    box-shadow: 3px 4px 10px rgb(0, 0, 0);
+}
+::placeholder { color: rgb(123, 123, 125); padding-left: 10px; }
+
+.registro-form{
+    display: flex;
+    justify-content:center;
+}
+.registro-form a{
+    text-decoration: none;
+    color:rgb(58, 28, 212);
+}
+.error{
+    background-color: rgb(231, 102, 128);
+    width: 100%;
+    height: 30px;
+    margin-top: -20px;
+    margin-bottom: -30px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.correcto{
+    background-color: lawngreen;
+    width: 100%;
+    height: 30px;
+    margin-top: -20px;
+    margin-bottom: -30px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
